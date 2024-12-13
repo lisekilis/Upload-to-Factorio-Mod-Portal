@@ -1,24 +1,19 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-
-# Add your action's branding here. This will appear on the GitHub Marketplace.
-branding:
-  icon: 'heart'
-  color: 'red'
-
-# Define your inputs here.
+name: 'Upload to Factorio Mod Portal'
+description: 'Upload your mod to the specified Factorio Mod Portal modpage'
+author: 'lisekilis'
 inputs:
-  milliseconds:
-    description: 'Your input description here'
-    required: true
-    default: '1000'
-
-# Define your outputs here.
+  info-path:
+    description: 'Location of info.json'
+    default: 'src/info.json'
+  mod-dir:
+    description: 'Directory containing the the mod archive'
+    default: 'dist'
 outputs:
-  time:
-    description: 'Your output description here'
-
+  url:
+    description: 'url of the uploaded mod'
 runs:
   using: node20
   main: dist/index.js
+branding:
+  icon: upload
+  color: orange
