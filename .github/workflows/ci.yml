@@ -62,10 +62,8 @@ jobs:
       - name: Test Local Action
         id: test-action
         uses: ./
-        env: 
+        env:
           FACTORIO_API_TOKEN: ${{ secrets.FACTORIO_UPLOAD_TOKEN }}
-
-          
 
       - name: Print Output
         id: output

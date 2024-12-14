@@ -7,7 +7,5 @@
   "contact": "",
   "homepage": "",
   "description": "",
-  "dependencies": [
-    "base >= 2.0.21"
-  ]
+  "dependencies": ["base >= 2.0.21"]
 }
