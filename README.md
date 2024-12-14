@@ -26,7 +26,7 @@ It will not create a new mod page for you, you have to do that yourself.
 ```yaml
 uses:
   - name: Upload to Mod Portal
-    uses: lisekilis/Upload-to-Factorio-Mod-Portal
+    uses: lisekilis/Factorio-mod-portal-Upload
       env:
         FACTORIO_API_TOKEN: ${{ secrets.FACTORIO_TOKEN }}
 ```
