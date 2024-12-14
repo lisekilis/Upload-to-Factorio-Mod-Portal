@@ -1,4 +1,4 @@
-name: 'Upload to Factorio Mod Portal'
+name: 'Factorio mod Upload'
 description: 'Upload your mod to the specified Factorio Mod Portal modpage'
 author: 'lisekilis'
 inputs:
