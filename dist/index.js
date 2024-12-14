@@ -33468,6 +33468,7 @@ async function run() {
             throw new Error('No token provided, canceling upload');
         }
         const infoPath = core.getInput('info-path');
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         const modData = JSON.parse(fs_1.default.readFileSync(infoPath ? infoPath : `src/info.json`, 'utf-8'));
         const modID = modData.name;
         if (!modID) {
@@ -33534,6 +33535,7 @@ async function run() {
         }
     }
 }
+// eslint-disable-next-line @typescript-eslint/no-floating-promises
 run();
 
 
